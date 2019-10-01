@@ -3,8 +3,13 @@
     paper.install(window);
     paper.setup(document.getElementById(mainCanvas));
     // something
-    var c = Shape.Cirle(200,200,50);
-    c.fillColor = "green";
+    let inputTool = new Tool;
+    inputTool.onMouseDown = function(event){
+        var c = Shape.Cirle(event.point.x,event.point.y,20);
+        c.fillColor = "green";
+    }
+
+   
 
     paper.view.draw();
     console.log("echo");
