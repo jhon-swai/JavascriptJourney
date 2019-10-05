@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Modal window</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      let ans = confirm("Is it ok to ask your age");
+      if(ans){
+        let age = prompt("How old are you :-)","Enter age here");
+        if(age == "Enter age here") alert("Thanks for your cooperation");
+        else alert(`Next year you will be ${++age} years old`);
+      }
+      else alert("Thanks for being honest");
+    </script>
+  </body>
+</html>
